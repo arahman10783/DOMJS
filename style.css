@@ -10,9 +10,20 @@ td, th {
 }
 
 tr:nth-child(even) {
-  background-color: #8f8f8f;
+  background-color: #d9d9d9;
 }
 
 .langName{
   color: red;
+}
+
+.tableRow{
+  display: flex;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.tableRow div{
+  min-width: 100px;
 }

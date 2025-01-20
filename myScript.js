@@ -44,6 +44,22 @@ const programmingLanguages = [
 
 const dataTable = document.getElementById("dataTable")
 
+function mapDataInTableHandler (){
+  programmingLanguages.forEach(({name, firstPublishDate, lastAddition}) => {
+    dataTable.innerHTML += `
+    <tr>
+    <td>${name}</td>
+    <td>${firstPublishDate}</td>
+    <td>${lastAddition}</td>
+    </tr>
+    `
+  })
+}
+
+dataTable.onload = mapDataInTableHandler()
+
+
+
 // for(let {name, firstPublishDate, lastAddition} of programmingLanguages){
 //   dataTable.innerHTML += `
 //   <tr>
@@ -55,16 +71,7 @@ const dataTable = document.getElementById("dataTable")
 //   `
 // }
 
-programmingLanguages.forEach(({name, firstPublishDate, lastAddition}) => {
-  dataTable.innerHTML += `
-  <tr>
-  <td>${name}</td>
-  <td>${firstPublishDate}</td>
-  <td>${lastAddition}</td>
 
-  </tr>
-  `
-})
 
 const tableRows = dataTable.getElementsByTagName("tr")
 
