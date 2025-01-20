@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 class="title"></h1>
+  <p id="firstParagraph"></p>
+  <p id="dateP"></p>
+  
+  <img id="imageId" src="" alt=""/> <!-- https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-fall-waterfall-free-image.jpeg?w=600&quality=80 -->
+
+
+  <script>
+
+    
+    const firstParagraph = document.getElementById("firstParagraph") // Select One element (if id is repeated it will select the first one)
+    const title = document.getElementsByClassName("title") // Loop all DOM elements and returns array of elements 
+    const paragraph = document.getElementsByTagName("p") // Loop all DOM elements and returns array of elements
+    const dateP = document.querySelector("#dateP")
+
+    // add HTML element or text in selected element 
+    for(let el of title){
+      el.innerText = "Welcome in Element"  //add text
+    }
+    firstParagraph.innerHTML = "<b>Hello</b> in Dom" // add HTML element in the selected element 
+    dateP.innerHTML = `Current Date: ${Date()}`
+
+    // change attributes 
+    const image = document.getElementById("imageId")
+    image.src = "https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-fall-waterfall-free-image.jpeg?w=600&quality=80"
+    image.alt = "this is test image"
+</script>
+</body>
+</html>
