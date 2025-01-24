@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO List</title>
+  <link rel="stylesheet" href="todo.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>My TO-DO List</h1>
+    <div class="todo-form">
+      <input id="taskInput" type="text" placeholder="Add task to do"/>
+      <button id="addTaskBtn" role="button">Add to the List</button>
+    </div>
+    <p id="error">
+      Please add real data and not duplicate
+    </p>
+    <p id="info">
+      No Tasks added yet
+    </p>
+    <ul class="todo-list" id="todoListId">
+      <!-- li to be added from script -->
+    </ul>
+  </div>
+
+  <script src="todo.js"></script>
+</body>
+</html>
