@@ -8,7 +8,9 @@ function displayList (list){
     list.forEach((task) => {
       todoListUL.innerHTML += `
         <li class="todo-element">
-            <input type="checkbox" onclick="onCheckedHandler(${task.id})" id="check${task.id}" ${task.completed && "checked"} />
+            <label class="checkLabel" for="check${task.id}">
+              <input type="checkbox" class="checkbox" onclick="onCheckedHandler(${task.id})" id="check${task.id}" ${task.completed && "checked"} />
+            </label>
             <span id="title${task.id}">${task.title}</span>
             <button role="button" onclick="onDeleteHandle(${task.id})" class="delete">Delete</button>
           </li>
