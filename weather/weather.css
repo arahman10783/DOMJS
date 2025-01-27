@@ -1,0 +1,40 @@
+body{
+  position: relative;
+  font-family: sans-serif;
+}
+p{
+  margin: 0;
+}
+
+.container{
+  width: 600px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.main-card{
+  background: linear-gradient(36deg, rgba(9,121,120,1) 0%, rgba(0,194,255,1) 100%);
+  background-color: rgba(9,121,120,1);
+  padding: 2em;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+#cityName{
+  color: #FFF;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+#mainTemp{
+  color: #FFF;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.feelLike{
+  color: #FFF;
+}
